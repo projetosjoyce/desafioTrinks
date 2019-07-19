@@ -48,13 +48,13 @@ Crie como se você fosse usar !
   ## SCREENSHOTS:
   
     Página Principal
-  <img src="https://ibb.co/SKFwPVr" height = "400" width = "900" />
+  https://ibb.co/SKFwPVr
   
   	Busca por Personagem
-  <img src="https://ibb.co/FgZ3b5n" height = "400" width = "900" />
+  https://ibb.co/FgZ3b5n
 
   	Busca por Filmes
-  <img src="https://ibb.co/BB9Bpj1" height = "400" width = "900" />
+  https://ibb.co/BB9Bpj1
 
 
 
