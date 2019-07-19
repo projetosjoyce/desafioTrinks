@@ -1,0 +1,49 @@
+<div class="card-columns">
+  <div class="card bg-light mb-3" *ngFor="let item of itens" style="max-width: 18rem;">
+    <img class="card-img-top" src="../../assets/img/batle.jpeg" alt="Card image cap">
+    <div class="card-header" *ngIf="isFilm">
+      <h1>{{item.title}}</h1>
+    </div>
+    <div class="card-header" *ngIf="isPerson">
+      <h1>{{item.name}}</h1>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" *ngIf="isFilm">Personagens do filme</h5>
+      <h5 class="card-title" *ngIf="isPerson">Filmes em que o personagem aparece</h5>
+      <p class="card-text">
+        <ul *ngIf="isFilm">
+          <li *ngFor="let persons of namesPersons">{{persons.name}}</li>
+        </ul>
+        <ul *ngIf="isPerson">
+          <li *ngFor="let films of namesFilms">{{films.title}}</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div> -->
